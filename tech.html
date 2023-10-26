@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin-top: 2in;">
+
+    <div class="container my-5">
+        <div class="row">
+                <h2 style="margin: 0.2in;">TechSkills</h2>
+            <div class="col-lg-4 mb-4">
+                <h4>Programming Skills</h4>
+                <ul class="list-unstyled">
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h4>Databases</h4>
+                <ul class="list-unstyled">
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h4>Web Technologies</h4>
+                <ul class="list-unstyled">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Node</li>
+                    <li>ReactJS</li>
+                    <li>Express</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data + document.body.innerHTML;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = document.body.innerHTML + data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="margin-top: 2in;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="my_name mb-3">
+                    <h2>M Varun</h2>
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <h3>Career Objective</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vitae autem excepturi est perferendis
+                        ullam fugiat blanditiis sunt in fugit adipisci esse officia optio fuga nemo recusandae consectetur, nihil
+                        quibusdam?
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum consequuntur rem odit, eveniet corporis
+                        suscipit illum, assumenda, quo voluptatem incidunt ipsum enim. Perferendis placeat delectus incidunt
+                        dignissimos maiores porro consectetur!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="rounded-circle bg-secondary mx-auto mt-4" style="width: 200px; height: 200px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data + document.body.innerHTML;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = document.body.innerHTML + data;
+            });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
